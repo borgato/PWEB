@@ -1,0 +1,92 @@
+
+body {
+	background: url(https://1.bp.blogspot.com/-WtZN6qsV8GM/XX2mi5QIm1I/AAAAAAAAB9A/bAIEBLfvHTMYgX3Mso3NGW5neA648zW4QCLcBGAsYHQ/s640/153b9fe1b9cd0a2e3340e1cb85bbeb3e.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
+	sans-serif;
+	line-height: 1.5;
+}
+
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+article {
+	background-color: #FFF;
+	border: 2px solid #CCC;
+	border-color: #CCC #999 #999 #CCC;
+	margin-bottom: 20px;
+	padding: 10px; /* espaçamento entre a borda e o título */
+}
+
+
+article h2 {
+	border-bottom: 1px dashed #7E9F19;
+	margin: 0;
+}
+
+article img {
+	border: 2px solid #CCC;
+	border-color: #CCC #999 #999 #CCC;
+	float: left;
+	margin: 10px 10px 0 0;
+	padding: 2px;
+	width: 160px;
+	height: 160px;
+}
+
+article a { /* mudando a cor dos links para negrito */
+	color: #2C88A7;
+	font-weight: bold;
+}
+
+header h1{
+    	display: block;
+    	margin-left: auto;
+    	margin-right: aut
+}
+
+.clear { /* para a imagem nao "ficar fora" quando usa o float */
+	clear: both;
+}
+
+footer {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+section { /* para a barra lateral lista e titulo */
+	float: left;
+	width: 660px;
+}
+
+aside {
+	float: right;
+	width: 260px;	
+	background-color: #FFF;
+	border: 2px solid #CCC;
+	border-color: #CCC #999 #999 #CCC;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+aside a{ 
+	color: #2C88A7;
+	font-weight: bold;
+}
+
+aside h3 {
+	font-size: 16px;
+	margin-top: 0;
+}
+
+aside ol {
+	font-size: 16px;
+}
+
+
