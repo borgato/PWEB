@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JoKenPô</title>
+
+</head>
+
+<body>
+    <p align="center"><img width="550px" height="220px"src="jokenpo.png"></p>
+    <h2 align="center">Jogador:</h2>
+    <p align="center">
+        <img width="80px" height="80px" src="pedra.png" alt="Pedra">
+        <img width="80px" height="80px" src="papel.png" alt="Papel">
+        <img width="80px" height="80px" src="tesoura.png" alt="Tesoura">
+    </p>
+    <form align="center" name="frmJokenpo">
+        <input type="radio" name="escolha" id="pedra">Pedra
+        <input type="radio" name="escolha" id="papel">Papel
+        <input type="radio" name="escolha" id="tesoura">Tesoura
+        <p align="center">
+        <input type="button" value="Jogar" onclick="jogar()">
+        <input type="reset" value="Resetar" onclick="resetar()">
+        </p>
+    </form>
+    
+    <h2 align="center">Computador:</h2>
+    <p align="center">
+        <img border="2px" width="80px" height="80px" src="pc.png" alt="PC" id="pc">
+    </p>
+    <script src="jokenpo.js"></script>
+</body>
+
+</html>
