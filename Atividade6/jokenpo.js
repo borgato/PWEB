@@ -3,29 +3,51 @@ function jogar(){
 		alert("Selecione uma opção.");
 	}
 	else{
-		var resultado = Math.floor(Math.random() * 3);
+		var resultado = Math.round(Math.random()*3);
 		switch(resultado){
 			case 0:
 				document.getElementById("pc").src="pedra.png";
+				if(document.getElementById("pedra").cheked){
+					alert("Empate");
+					break;
+				}
+				else if(document.getElementById("papel").cheked){
+					alert("Você ganhou");
+					break;
+				}
+				else{
+					alert("Você perdeu 1");
+				}
 				break;
 			case 1:
 				document.getElementById("pc").src="papel.png";
+				if(document.getElementById("pedra").cheked){
+					alert("Você perdeu");
+					break;
+				}
+				else if(document.getElementById("papel").cheked){
+					alert("Empate");
+					break;
+				}
+				else{
+					alert("Você ganhou 2");
+				}
 				break;
 			case 2:
 				document.getElementById("pc").src="tesoura.png";
+				if(document.getElementById("pedra").cheked){
+					alert("Você ganhou");
+					break;
+				}
+				else if(document.getElementById("papel").cheked){
+					alert("Você perdeu");
+					break;
+				}
+				else{
+					alert("Empate 3");
+				}
 				break;
 		}
-		if((document.getElementById("pedra").cheked && restultado == 0)||(document.getElementById("papel").cheked && restultado == 1)||(document.getElementById("tesoura").cheked && restultado == 2)){
-			alert("Empate!");
-		}
-		else if((document.getElementById("pedra").cheked && restultado == 2)||(document.getElementById("papel").cheked && restultado == 0)||(document.getElementById("tesoura").cheked && restultado == 1)){
-			alert("Você venceu!");
-		}
-		else{
-			alert("Você perdeu!");
-		}
-
-
 	}
 }
 
