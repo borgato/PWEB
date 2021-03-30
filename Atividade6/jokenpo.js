@@ -5,46 +5,40 @@ function jogar(){
 	else{
 		var resultado = Math.round(Math.random()*3);
 		switch(resultado){
-			case 0:
-				document.getElementById("pc").src="pedra.png";
-				if(document.getElementById("pedra").cheked){
-					alert("Empate");
-					break;
-				}
-				else if(document.getElementById("papel").cheked){
-					alert("Você ganhou");
-					break;
-				}
-				else{
-					alert("Você perdeu 1");
-				}
-				break;
 			case 1:
-				document.getElementById("pc").src="papel.png";
-				if(document.getElementById("pedra").cheked){
-					alert("Você perdeu");
-					break;
-				}
-				else if(document.getElementById("papel").cheked){
+				document.getElementById("pc").src="pedra.png";
+				if(document.getElementById("pedra").checked == true){
 					alert("Empate");
-					break;
+				}
+				else if(document.getElementById("papel").checked == true){
+					alert("Você ganhou");
 				}
 				else{
-					alert("Você ganhou 2");
+					alert("Você perdeu");
 				}
 				break;
 			case 2:
-				document.getElementById("pc").src="tesoura.png";
-				if(document.getElementById("pedra").cheked){
-					alert("Você ganhou");
-					break;
-				}
-				else if(document.getElementById("papel").cheked){
+				document.getElementById("pc").src="papel.png";
+				if(document.getElementById("pedra").checked == true){
 					alert("Você perdeu");
-					break;
+				}
+				else if(document.getElementById("papel").checked == true){
+					alert("Empate");
 				}
 				else{
-					alert("Empate 3");
+					alert("Você ganhou");
+				}
+				break;
+			case 3:
+				document.getElementById("pc").src="tesoura.png";
+				if(document.getElementById("pedra").checked == true){
+					alert("Você ganhou");
+				}
+				else if(document.getElementById("papel").checked == true){
+					alert("Você perdeu");
+				}
+				else{
+					alert("Empate");
 				}
 				break;
 		}
