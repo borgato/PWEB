@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alunos</title>
+
+    <script>
+        function Aluno(nome, ra) {
+			this.nome = nome;
+			this.ra = ra;
+        }
+
+        var aluno1 = new Aluno("Geovane", 30481913018);
+        alert("Nome: "+aluno1.nome+" RA: "+aluno1.ra);
+
+        var aluno2= {
+            nome2: "Geovane",
+            ra2: 30481913018
+        };
+
+        alert("Nome: "+aluno2.nome2+" RA: "+aluno2.ra2);
+
+        var aluno3 = new Object(),
+            str = "Geovane",
+            int = 30481913018;
+
+            aluno3[str] = "Geovane";
+            aluno3[int] = 30481913018;
+
+        alert("Nome: "+aluno3[str]+" RA: "+aluno3[int]);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
