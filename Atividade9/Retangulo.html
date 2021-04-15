@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Retângulo</title>
+
+    <script>
+        function Retangulo(x, y, area){
+            this.x = x;
+            this.y = y;
+            this.area = area;
+        }
+
+        Retangulo.x = prompt("Digite o valor da base: ");
+        var base = eval(Retangulo.x);
+        Retangulo.y = prompt("Digite o valor da altura: ");
+        var altura = eval(Retangulo.y);    
+        Retangulo.area = base * altura;
+        
+        alert("A áre do retângulo informado é: "+Retangulo.area);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

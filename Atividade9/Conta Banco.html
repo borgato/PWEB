@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conta Banco</title>
+
+    <script>
+        function Conta(){
+            var nome;
+            this.getNome = function(){
+                return nome;
+            };
+            this.setNome = function(value){
+                nome = value;
+            };
+            var banco;
+            this.getBanco = function(){
+                return banco;
+            };
+            this.setBanco = function(value){
+                banco = value;
+            };
+            var nconta;
+            this.getNConta = function(){
+                return nconta;
+            };
+            this.setNConta = function(value){
+                nconta = value;
+            };
+            var saldo;
+            this.getSaldo = function(){
+                return saldo;
+            };
+            this.setSaldo = function(value){
+                saldo = value;
+            };
+        }
+
+        function Corrente(){
+            var saldoesp;
+            this.getSaldoEsp = function(){
+                return saldoesp;
+            };
+            this.setSaldoEsp = function(value){
+                saldoesp = value;
+            };
+        }
+
+        function Poupanca(){
+            var juros;
+            this.getJuros = function(){
+                return juros;
+            };
+            this.setJuros = function(value){
+                juros = value;
+            };
+        }
+        
+        Corrente.prototype = new Conta();
+        Poupanca.prototype = new Conta();
+
+        var nCorrente = new Corrente();
+        var nPoupanca = new Poupanca();
+        nCorrente.setNome('Geovane');
+        nCorrente.setBanco('Caixa');
+        nCorrente.setNConta('123-4');
+        nCorrente.setSaldo('10.000,00');
+        nCorrente.setSaldoEsp('5.000,00');
+        nPoupanca.setJuros('3% a.a');
+
+        alert("Nome do cliente: "+nCorrente.getNome()+", Banco: "+nCorrente.getBanco()+", Nº Conta: "+nCorrente.getNConta()+", Saldo: "+nCorrente.getSaldo()+", Saldo Especial: "+nCorrente.getSaldoEsp()+", Juros: "+nPoupanca.getJuros());
+
+        
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
